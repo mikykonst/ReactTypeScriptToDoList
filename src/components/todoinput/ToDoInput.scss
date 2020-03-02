@@ -1,0 +1,32 @@
+.to-do-input {
+    display: flex;
+    .to-do-input-value {
+        flex-grow: 5;
+        height: 30px;
+        border: #cdcdcd 1px solid;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 15px;
+        color: #8D8D8F;
+    }
+
+    .to-do-input-button {
+        flex-grow: 1;
+        margin-left: 20px;
+        border: #cdcdcd 1px solid;
+        border-radius: 5px;
+    }
+
+    .to-do-input-button:hover {
+        animation: buttonHover 1s;
+    }
+}
+
+@keyframes buttonHover {
+    from {
+        background-color: #ffffff;
+    }
+    to {
+        background-color: greenyellow;
+    }
+}

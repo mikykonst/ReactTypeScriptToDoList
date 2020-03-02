@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 600px;
+    justify-content: flex-start;
+    margin: 0 auto;
+    background-color: #fafafa;
+    padding: 10px;
+    border-radius: 10px;
+
+    .todo-logo {
+        align-self: center;
+    }
+}

@@ -10,15 +10,19 @@ import {
     TOGGLE_TO_DO_ITEM
 } from "./Actions";
 
+// Initial store of ToDo list
 export const initialState: ToDoState = {
     ToDoItems: []
 };
 
+// Create Application context to handle global state for all components
 export const ToDoContext: React.Context<ToDoContextModel> = React.createContext({
     state: initialState,
     dispatch: null
 });
 
+
+// Add Task reducer
 export const AddToDoItemReducer = (state: ToDoState, action: AddToDoItemAction) => {
     return {
         ...state,
@@ -26,6 +30,8 @@ export const AddToDoItemReducer = (state: ToDoState, action: AddToDoItemAction) 
     }
 };
 
+
+// Toggle task reducer
 export const ToggleToDoItemReducer = (state: ToDoState, action: ToggleToDoItemAction) => {
     return {
         ...state,
@@ -37,6 +43,8 @@ export const ToggleToDoItemReducer = (state: ToDoState, action: ToggleToDoItemAc
     }
 };
 
+
+// Root reducer
 export function ToDoReducer(state: ToDoState, action: Action): ToDoState {
     switch (action.type) {
         case ADD_TO_DO_ITEM:

@@ -4,7 +4,8 @@ import ToDoWizard from "./components/ToDoWizard";
 
 function App() {
   return (
-    <ToDoWizard />
+    // Show ToDoWizard component on load
+    <ToDoWizard/>
   );
 }
 

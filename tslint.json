@@ -11,6 +11,7 @@
     "jsx-wrap-multiline": false,
     "jsx-boolean-value":  false,
     "no-debugger": true,
-    "no-console": true
+    "no-console": false,
+    "jsx-no-lambda": false
   }
 }

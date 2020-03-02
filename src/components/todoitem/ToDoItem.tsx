@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useContext } from "react";
 import { ToDoItemModel } from "../../models/ToDoItemModel";
-import { ToDoContext } from "../../state/ToDoReducer";
 import { ToggleToDoItem } from "../../state/Actions";
+import { ToDoContext } from "../../state/ToDoReducer";
 import "./ToDoItem.scss";
 
 const ToDoItem: FunctionComponent<ToDoItemModel> = (toDoItem: ToDoItemModel) => {

@@ -1,9 +1,9 @@
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { FunctionComponent, useReducer } from "react";
 import { initialState, ToDoContext, ToDoReducer } from "../state/ToDoReducer";
-import ToDoList from "./todolist/ToDoList";
 import ToDoInput from "./todoinput/ToDoInput";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import ToDoList from "./todolist/ToDoList";
 import "./ToDoWizard.scss";
 
 const ToDoWizard: FunctionComponent = () => {

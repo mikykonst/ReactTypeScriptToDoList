@@ -1,5 +1,5 @@
-import { Action } from "./Action";
 import { ToDoItemModel } from "../models/ToDoItemModel";
+import { Action } from "./Action";
 
 export const ADD_TO_DO_ITEM = "ADD_TO_DO_ITEM";
 export const TOGGLE_TO_DO_ITEM = "TOGGLE_TO_DO_ITEM";

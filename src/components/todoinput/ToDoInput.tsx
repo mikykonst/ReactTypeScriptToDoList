@@ -1,8 +1,8 @@
-import React, { FunctionComponent, useContext, useState } from "react";
-import { ToDoContext } from "../../state/ToDoReducer";
-import { AddToDoItem } from "../../state/Actions";
+import { faExclamationCircle, faLevelDownAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLevelDownAlt, faExclamationCircle } from "@fortawesome/free-solid-svg-icons";
+import React, { FunctionComponent, useContext, useState } from "react";
+import { AddToDoItem } from "../../state/Actions";
+import { ToDoContext } from "../../state/ToDoReducer";
 import "./ToDoInput.scss";
 
 const ToDoInput: FunctionComponent = () => {
@@ -39,7 +39,8 @@ const ToDoInput: FunctionComponent = () => {
                 />
                 <button
                     className="to-do-input-button"
-                    onClick={addNewToDoItem}>
+                    onClick={addNewToDoItem}
+                >
                     <FontAwesomeIcon
                         icon={faLevelDownAlt}
                     />
@@ -47,7 +48,8 @@ const ToDoInput: FunctionComponent = () => {
             </div>
             <span
                 className="to-do-input-warning"
-                hidden={inputValue !== ""}>
+                hidden={inputValue !== ""}
+            >
                 <FontAwesomeIcon
                     className="to-do-input-warning-icon"
                     icon={faExclamationCircle}

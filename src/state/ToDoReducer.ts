@@ -1,14 +1,14 @@
 import React from "react";
-import { Action } from "./Action";
-import { ToDoState } from "../models/ToDoState";
-import {
-    ADD_TO_DO_ITEM,
-    AddToDoItemAction,
-    TOGGLE_TO_DO_ITEM,
-    ToggleToDoItemAction
-} from "./Actions";
 import { ToDoContextModel } from "../models/ToDoContextModel";
 import { ToDoItemModel } from "../models/ToDoItemModel";
+import { ToDoState } from "../models/ToDoState";
+import { Action } from "./Action";
+import {
+    AddToDoItemAction,
+    ADD_TO_DO_ITEM,
+    ToggleToDoItemAction,
+    TOGGLE_TO_DO_ITEM
+} from "./Actions";
 
 export const initialState: ToDoState = {
     ToDoItems: []

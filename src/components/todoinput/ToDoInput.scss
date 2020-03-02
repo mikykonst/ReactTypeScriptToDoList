@@ -1,32 +1,38 @@
 .to-do-input {
+  display: flex;
+  flex-direction: column;
+
+  .to-do-input-inputs {
     display: flex;
-    .to-do-input-value {
-        flex-grow: 5;
-        height: 30px;
-        border: #cdcdcd 1px solid;
-        border-radius: 5px;
-        padding: 10px;
-        font-size: 15px;
-        color: #8D8D8F;
-    }
+  }
 
-    .to-do-input-button {
-        flex-grow: 1;
-        margin-left: 20px;
-        border: #cdcdcd 1px solid;
-        border-radius: 5px;
-    }
+  .to-do-input-value {
+    flex-grow: 5;
+    height: 30px;
+    border: #cdcdcd 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    color: #8D8D8F;
+  }
 
-    .to-do-input-button:hover {
-        animation: buttonHover 1s;
-    }
-}
+  .to-do-input-button {
+    flex-grow: 1;
+    margin-left: 20px;
+    border: #cdcdcd 1px solid;
+    border-radius: 5px;
+    transition: background-color .3s ease-out;
+  }
 
-@keyframes buttonHover {
-    from {
-        background-color: #ffffff;
+  .to-do-input-button:hover {
+    background-color: mediumseagreen;
+  }
+
+  .to-do-input-warning {
+    color: #d85624;
+
+    .to-do-input-warning-icon {
+      margin-right: 5px;
     }
-    to {
-        background-color: greenyellow;
-    }
+  }
 }
